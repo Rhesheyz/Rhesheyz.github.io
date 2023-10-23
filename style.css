@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Style latar belakang #beranda */
+
+.bg-beranda {
+    background-image: url('img/bg.jpg');
+    /* Ganti dengan gambar latar belakang #beranda Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* Setinggi layar (full layar) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    /* Tambahan gaya lainnya sesuai kebutuhan Anda */
+}
+
+
+/* Style header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+section {
+    padding: 40px;
+}
+
+.project {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Style footer */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.tentang-content {
+    display: flex;
+    align-items: center;
+    /* Mengatur vertikal alignment ke tengah */
+}
+
+
+/* Style foto dalam bagian "Tentang" */
+
+.tentang-content img {
+    max-width: 300px;
+    /* Batasi lebar gambar */
+    height: auto;
+}
+
+.bg-tentang {
+    background-image: url('bg7.jpg');
+    /* Ganti dengan gambar latar belakang #beranda Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* Setinggi layar (full layar) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    /* Tambahan gaya lainnya sesuai kebutuhan Anda */
+}
+
+.foto-lingkaran {
+    border-radius: 50%;
+    /* Mengatur bingkai lingkaran */
+    max-width: 300px;
+    /* Batasi lebar gambar */
+    height: auto;
+}
+
+.bg-porto {
+    background-image: url('img/bg2.jpg');
+    /* Ganti dengan gambar latar belakang #beranda Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* Setinggi layar (full layar) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    /* Tambahan gaya lainnya sesuai kebutuhan Anda */
+}
+
+.kontak {
+    background-image: url('img/background.jpg');
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+}
+
+.nav a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform .5s;
+}
+
+.nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav .login {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.nav .login:hover {
+    background: white;
+    color: black;
+}
